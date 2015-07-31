@@ -1,3 +1,4 @@
+function midterm_1b(x)
 % Write the Matlab script that modulates 1000 symbols of shaped QPSK input data
 % for each of the three SQRT Nyquist filters. Plot the first 400 samples (100
 % symbols) of the real part of the three modulated series on a single figure
@@ -8,12 +9,6 @@ path=strcat('t:\xfer\xfer_res\jemele\projects\ucsd\wes265\assignments\midterm\1b
 bins = 2048
 M = 10
 sps = 4
-
-% generate qpsk symbols (upsampled 4:1)
-s_n = 1000
-s_d = [ -1-j -1+j 1-j 1+j ]
-s = arrayfun(@(i) s_d(i),randi(length(s_d),s_n,1))
-x = upsample(s,4)
 
 % create a figure for rendering
 f = figure('Visible','Off')
@@ -34,7 +29,7 @@ subplot(length(alphas),1,i)
 symbols = 100
 hold on
 plot(0:1/sps:100,real(h_s(1:(sps*symbols)+1)))
-stem((0:symbols)+M,real(s(1:symbols+1)),'r')
+stem((0:symbols)+M,real(x(1:sps:(sps*symbols)+1)),'r')
 hold off
 grid on
 axis([0 symbols -1.5 1.5])
@@ -45,4 +40,4 @@ end
 
 % write the plot out
 print(f,'-dpng',strcat(path,'.png'))
-
+end

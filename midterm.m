@@ -1,3 +1,6 @@
+sps = 4
+x = qpsk_symbols(1000,4)
+
 % 1a. Write the Matlab script that forms and plots the amplitude normalized impulse
 % response for 3 SQRT Nyquist harris taper filters containing 20 symbols with
 % 4-samples per symbol for values of alpha = 0.2, 0.4 and 0.6. Use harris taper
@@ -10,15 +13,15 @@ midterm_1a(0.6)
 % data for each of the three SQRT Nyquist filters. Plot the first 400 samples
 % (100 symbols) of the real part of the three modulated series on a single
 % figure with three subplots. 
-midterm_1b()
+midterm_1b(x)
 
 % 1c. Plot 2048 point windowed spectra of the three modulation time series on a
 % single figure with three subplots.
-midterm_1c()
+midterm_1c(x)
 
 % 1d. Write the Matlab script that modulates 1000 symbols of shaped QPSK input
 % data for each of the three SQRT Nyquist filters. Plot the state transition
 % diagrams of the three modulated series on a single figure.
-midterm_1d()
+midterm_1d(x)
 
 

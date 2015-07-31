@@ -1,3 +1,4 @@
+function midterm_1c(x)
 % 1c. Plot 2048 point windowed spectra of the three modulation time series on a
 % single figure with three subplots.
 
@@ -6,12 +7,6 @@ path=strcat('t:\xfer\xfer_res\jemele\projects\ucsd\wes265\assignments\midterm\1c
 bins = 2048
 M = 10
 sps = 4
-
-% generate qpsk symbols (upsampled 4:1)
-s_n = 1000
-s_d = [ -1-j -1+j 1-j 1+j ]
-s = arrayfun(@(i) s_d(i),randi(length(s_d),s_n,1))
-x = upsample(s,4)
 
 % create a figure for rendering
 f = figure('Visible','Off')
@@ -42,4 +37,4 @@ end
 
 % write the plot out
 print(f,'-dpng',strcat(path,'.png'))
-
+end

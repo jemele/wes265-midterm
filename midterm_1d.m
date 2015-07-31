@@ -1,3 +1,4 @@
+function midterm_1d(x)
 % 1d. Write the Matlab script that modulates 1000 symbols of shaped QPSK input
 % data for each of the three SQRT Nyquist filters. Plot the state transition
 % diagrams of the three modulated series on a single figure.
@@ -7,12 +8,6 @@ path=strcat('t:\xfer\xfer_res\jemele\projects\ucsd\wes265\assignments\midterm\1d
 bins = 2048
 M = 10
 sps = 4
-
-% generate qpsk symbols (upsampled 4:1)
-s_n = 1000
-s_d = [ -1-j -1+j 1-j 1+j ]
-s = arrayfun(@(i) s_d(i),randi(length(s_d),s_n,1))
-x = upsample(s,4)
 
 % create a figure for rendering
 f = figure('Visible','Off')
