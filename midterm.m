@@ -12,3 +12,8 @@ midterm_1a(0.6)
 % figure with three subplots. 
 midterm_1b()
 
+% 1c. Plot 2048 point windowed spectra of the three modulation time series on a
+% single figure with three subplots.
+midterm_1c()
+
+
