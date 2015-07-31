@@ -16,4 +16,9 @@ midterm_1b()
 % single figure with three subplots.
 midterm_1c()
 
+% 1d. Write the Matlab script that modulates 1000 symbols of shaped QPSK input
+% data for each of the three SQRT Nyquist filters. Plot the state transition
+% diagrams of the three modulated series on a single figure.
+midterm_1d()
+
 
