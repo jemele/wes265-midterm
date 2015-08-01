@@ -45,3 +45,14 @@ midterm_1f(x)
 % single figure. Note the amplitude and frequency of the spectral lines in the
 % spectrum. How do the amplitude of these lines vary with excess bandwidth ?
 midterm_1g(x)
+
+% 1h. This is similar to part 1g but alter one of the signal components in the
+% conjugate product. We differentiate the time series with dxx=filter([1 0
+% -1]/2,1 xx] and then form the conjugate product offset time series
+% xx(1:2048).*conj(dxx(2:2049)) for each time series xx of the three shaped
+% QPSK time series (note the offset time index of dxx). Plot the three spectra
+% on a single figure. Note the amplitude and frequency of the spectral lines in
+% the spectrum. What change in the spectra is caused by using the derivative in
+% the conjugate cross product. How do the amplitude of these lines vary with
+% excess bandwidth ?
+midterm_1h(x)
