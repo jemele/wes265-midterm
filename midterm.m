@@ -24,4 +24,10 @@ midterm_1c(x)
 % diagrams of the three modulated series on a single figure.
 midterm_1d(x)
 
+% 1e. Write the Matlab script that plots the eye diagrams of the shaped QPSK
+% data for each of the three SQRT Nyquist filters on a single figure. Plot the
+% eye diagrams.
+midterm_1e(x)
+
+
 
