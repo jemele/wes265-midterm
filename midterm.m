@@ -60,3 +60,8 @@ midterm_1h(x)
 % 1i. Pass the three modulation time series through their corresponding matched
 % filters and plot the eye diagrams for the three matched filter output series.
 midterm_1i(x)
+
+% 1j. Plot the constellation diagrams for the three matched filter output
+% series and a zoom to the constellation point ISI spreading. Comment on the
+% relative size of the constellation point spreading.
+midterm_1j(x)
