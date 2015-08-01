@@ -37,3 +37,11 @@ midterm_1e(x)
 % signal.
 midterm_1f(x)
 
+% 1g. Here we use the non-linearity of a conjugate cross product to access the
+% periodic (cyclostationary) component of the shaped modulated signal. Write
+% the Matlab script that plots the magnitude of the windowed spectrum of the
+% conjugate product time series xx(1:2048).*conj(xx(1:2048)) for each time
+% series xx of the three shaped QPSK time series. Plot the three spectra on a
+% single figure. Note the amplitude and frequency of the spectral lines in the
+% spectrum. How do the amplitude of these lines vary with excess bandwidth ?
+midterm_1g(x)
