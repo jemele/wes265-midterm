@@ -29,5 +29,11 @@ midterm_1d(x)
 % eye diagrams.
 midterm_1e(x)
 
-
+% 1f. Write the Matlab script that plots the mean and standard deviation of the
+% average absolute value of the eye diagrams for shaped QPSK data for each of
+% the three SQRT Nyquist filters. Plot the position dependent mean and variance
+% of the three modulated time series on a single figure. These position
+% dependent statistics demonstrate the cyclostationarity of the modulated
+% signal.
+midterm_1f(x)
 
