@@ -56,3 +56,7 @@ midterm_1g(x)
 % the conjugate cross product. How do the amplitude of these lines vary with
 % excess bandwidth ?
 midterm_1h(x)
+
+% 1i. Pass the three modulation time series through their corresponding matched
+% filters and plot the eye diagrams for the three matched filter output series.
+midterm_1i(x)
