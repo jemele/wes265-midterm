@@ -26,7 +26,8 @@ dim=ceil(length(alphas)/2)
 subplot(dim,dim,i)
 
 % Note: every time you convolve, you incur the delay penalty of the filter.
-plot(h_m(1+160:sps:length(h_m)),'r.')
+delay=160
+plot(h_m(1+delay:sps:length(h_m)-(delay+1)),'r.')
 grid on
 axis('equal')
 title(['Delay=200 Constellation Diagram, Modulated Time Series, \alpha=',num2str(alpha)])
