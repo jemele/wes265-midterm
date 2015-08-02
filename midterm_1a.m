@@ -25,7 +25,7 @@ grid on
 axis([-M-1 M+1 -0.3 1.2])
 xlabel('Time index (symbols)')
 ylabel('Amplitude')
-title('Impulse response, SQRT Nyquist Harris Taper')
+title(['Impulse response, SQRT Nyquist Harris Taper, \alpha=',num2str(alpha)])
 
 subplot(4,1,2)
 fh = fftshift(20*log10(abs(fft(h/sum(h),bins))));
@@ -38,7 +38,7 @@ grid on
 axis([-2 2 -80 10])
 xlabel('Frequency')
 ylabel('Log Magnitude (dB)')
-title('Frequency Response, SQRT Nyquist Harris Taper')
+title(['Frequency Response, SQRT Nyquist Harris Taper, \alpha=',num2str(alpha)])
 
 subplot(4,1,3)
 plot((-0.5:1/bins:0.5-1/bins)*sps,fh)
@@ -48,7 +48,7 @@ grid on
 axis([-0.5 0.5 -0.1 .1])
 xlabel('Frequency')
 ylabel('Log Magnitude (dB)')
-title('Zoom to passband ripple, Magnitude Response, SQRT Nyquist Harris Taper')
+title(['Zoom to passband ripple, Magnitude Response, SQRT Nyquist Harris Taper,\alpha=',num2str(alpha)])
 
 subplot(4,1,4)
 plot((-0.5:1/bins:0.5-1/bins)*sps,fh)
@@ -58,6 +58,6 @@ grid on
 axis([0 1.0 -80 10])
 xlabel('Frequency')
 ylabel('Log Magnitude (dB)')
-title('Zoom to stopband ripple, Magnitude Response, SQRT Nyquist Harris Taper')
+title(['Zoom to stopband ripple, Magnitude Response, SQRT Nyquist Harris Taper, \alpha=',num2str(alpha)])
 print(f,'-dpng',strcat(path,'.png'))
 end
