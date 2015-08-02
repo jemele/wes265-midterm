@@ -73,10 +73,21 @@ midterm_1j(x)
 % eye diagrams. Comment on the change in the eye patterns relative to the
 % non-corrupted eye.
 midterm_1k(x)
+
+% 1l. We are now examining effects of the matched filter on the signal and the
+% noise that pass through the matched filter. Compute the variance of the input
+% signal, the noise signal and the signal plus noise at the input to the
+% matched filter and again at the output of the matched filter. Comment on the
+% SNR at the matched filter’s input and output.
 midterm_1l(x)
 
 % 1m. Plot the constellations of the noise corrupted signals from part 1i.
 % Comment on the change in constellations due to the additive noise.
 midterm_1m(x)
 
-
+% 1n. Simulate a phase shift error between the shaping filter and matched
+% filter by multiplying the shaping filter output series by the single complex
+% scalar exp(j*2*pi*0.05). Pass the phase shifted time series through their
+% matched filters and form plots of the constellations. Comment on the change
+% in the constellation from the non phase shifted constellation.
+midterm_1n(x)
