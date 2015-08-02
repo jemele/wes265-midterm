@@ -73,3 +73,10 @@ midterm_1j(x)
 % eye diagrams. Comment on the change in the eye patterns relative to the
 % non-corrupted eye.
 midterm_1k(x)
+midterm_1l(x)
+
+% 1m. Plot the constellations of the noise corrupted signals from part 1i.
+% Comment on the change in constellations due to the additive noise.
+midterm_1m(x)
+
+
