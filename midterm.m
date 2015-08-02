@@ -107,3 +107,10 @@ midterm_1o(x)
 % the undistorted constellation. 
 midterm_1p(x)
 
+% 1q. Simulate the effect of an interference signal tone residing in the signal
+% bandwidth of the received signal. Add a complex sinusoid
+% 0.2*exp(j*2*pi*(0:3999)*0.06) to the shaped time series. Pass the intrusion
+% corrupted time series through their matched filters and form plots of the
+% constellations. Comment on the change in the constellation from the
+% undistorted constellation. 
+midterm_1q(x)
