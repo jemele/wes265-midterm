@@ -65,3 +65,11 @@ midterm_1i(x)
 % series and a zoom to the constellation point ISI spreading. Comment on the
 % relative size of the constellation point spreading.
 midterm_1j(x)
+
+% 1k. Simulate The effect of channel noise added to the received signal by
+% adding a complex noise sequence, ns =
+% 0.5*(randn(1,4000)+j*randn(1,4000))/sqrt(2) to the shaped series. Pass the
+% noise corrupted series through their matched filters and form plots of their
+% eye diagrams. Comment on the change in the eye patterns relative to the
+% non-corrupted eye.
+midterm_1k(x)
