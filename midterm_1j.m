@@ -22,15 +22,22 @@ h_s = filter(h,1,x)
 h_m = conv(h,h_s)/(h*h')
 
 % plot
-dim=ceil(length(alphas)/2)
-subplot(dim,dim,i)
-
-% Note: every time you convolve, you incur the delay penalty of the filter.
+subplot(length(alphas),2,2*i-1)
 delay=160
 plot(h_m(1+delay:sps:length(h_m)-(delay+1)),'r.')
 grid on
 axis('equal')
-title(['Delay=200 Constellation Diagram, Modulated Time Series, \alpha=',num2str(alpha)])
+axis([-2 2 -2 2])
+title(['Constellation Diagram, Matched Filter, \alpha=',num2str(alpha)])
+
+subplot(length(alphas),2,2*i)
+delay=160
+plot(h_m(1+delay:sps:length(h_m)-(delay+1)),'r.')
+grid on
+axis('equal')
+axis([0.5 1.5 0.5 1.5])
+title(['Zoom to constellation plot'])
+
 end
 
 % write the plot out

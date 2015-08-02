@@ -30,7 +30,6 @@ plot(h_m_n(181:sps:length(x)),'r.')
 grid on
 axis([-2 2 -2 2])
 title(['Constellation Diagram, Noise + Matched Filter, \alpha=',num2str(alpha)])
-ylabel('Amplitude')
 
 subplot(length(alphas),2,2*i)
 plot(h_m_n(181:sps:length(x)),'r.')
