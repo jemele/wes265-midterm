@@ -99,3 +99,11 @@ midterm_1n(x)
 % change in the constellation from the zero frequency offset constellation.
 midterm_1o(x)
 
+% 1p. Simulate multipath channel distortion between the shaping filter and
+% matched filter by filtering the shaped time series with the multipath channel
+% model represented by the FIR impulse response  ch=[1  0  0  0  0.1  0  j*0.05].
+% Pass the channel distorted time series through their matched filters and form
+% plots of the constellations. Comment on the change in the constellation from
+% the undistorted constellation. 
+midterm_1p(x)
+
