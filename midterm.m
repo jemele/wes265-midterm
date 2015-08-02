@@ -91,3 +91,11 @@ midterm_1m(x)
 % matched filters and form plots of the constellations. Comment on the change
 % in the constellation from the non phase shifted constellation.
 midterm_1n(x)
+
+% 1o. Simulate a frequency offset error between the shaping filter and matched
+% filter by multiplying the shaping filter output series by the complex series
+% exp(j*2*pi*(0:3999)*0.00005). Pass the frequency offset time series through
+% their matched filters and form plots of the constellations. Comment on the
+% change in the constellation from the zero frequency offset constellation.
+midterm_1o(x)
+
